@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Estudiantes | TallerControl</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/03_estudiantes.css">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+
+<body>
+
+    <main class="estudiantes">
+
+        <!-- Luces -->
+
+        <div class="luz luz-1"></div>
+        <div class="luz luz-2"></div>
+
+        <!-- Encabezado -->
+
+        <header class="encabezado">
+
+            <div class="titulo">
+
+                <a href="02_inicio.html">
+                    <i data-lucide="arrow-left"></i>
+                </a>
+
+                <h1>Estudiantes</h1>
+
+            </div>
+
+            <div class="usuario-box">
+
+                <div class="usuario-info">
+
+                    <i data-lucide="user"></i>
+
+                    <span id="nombreUsuario"></span>
+
+                </div>
+
+                <button
+                    id="cerrarSesion"
+                    class="btn-salir">
+
+                    Salir
+
+                </button>
+
+            </div>
+
+        </header>
+
+        <!-- Buscar -->
+
+        <section class="busqueda">
+
+            <i data-lucide="search"></i>
+
+            <input
+                type="text"
+                id="buscar"
+                placeholder="Buscar estudiante...">
+
+        </section>
+
+        <!-- Acciones -->
+
+        <section class="acciones">
+
+            <button
+                class="btn-primary"
+                id="btnNuevoEstudiante">
+
+                <i data-lucide="plus"></i>
+
+                Nuevo estudiante
+
+            </button>
+
+            <button
+                class="btn-secondary">
+
+                <i data-lucide="file-spreadsheet"></i>
+
+                Importar Excel
+
+            </button>
+
+        </section>
+
+        <!-- Lista -->
+
+        <section
+            class="lista-estudiantes"
+            id="listaEstudiantes">
+
+        </section>
+
+        <!-- Footer -->
+
+        <footer>
+
+            Total de estudiantes:
+
+            <strong id="totalEstudiantes">
+
+                0
+
+            </strong>
+
+        </footer>
+
+        <!-- ===================== -->
+        <!-- MODAL ESTUDIANTE -->
+        <!-- ===================== -->
+
+        <div
+            id="modalEstudiante"
+            class="modal oculto">
+
+            <div class="modal-contenido">
+
+                <h2 id="tituloModal">
+
+                    Nuevo estudiante
+
+                </h2>
+
+                <input
+                    type="hidden"
+                    id="estudianteId">
+
+                <input
+                    type="text"
+                    id="apellido"
+                    placeholder="Apellido">
+
+                <input
+                    type="text"
+                    id="nombre"
+                    placeholder="Nombre">
+
+                <select id="anio">
+
+                    <option value="">
+                        Seleccione año
+                    </option>
+
+                    <option value="1">1°</option>
+                    <option value="2">2°</option>
+                    <option value="3">3°</option>
+                    <option value="4">4°</option>
+                    <option value="5">5°</option>
+                    <option value="6">6°</option>
+
+                </select>
+
+                <input
+                    type="text"
+                    id="division"
+                    placeholder="División">
+
+                <select id="grupo">
+
+                    <option value="">
+                        Seleccione grupo
+                    </option>
+
+                </select>
+
+                <select id="taller">
+
+                    <option value="">
+                        Seleccione taller
+                    </option>
+
+                </select>
+
+                <div class="modal-botones">
+
+                    <button
+                        id="guardarEstudiante">
+
+                        Guardar
+
+                    </button>
+
+                    <button
+                        id="cerrarModal">
+
+                        Cancelar
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="js/auth.js"></script>
+    <script src="js/03_estudiantes.js"></script>
+
+    <script>
+
+        lucide.createIcons();
+
+    </script>
+
+</body>
+
+</html>

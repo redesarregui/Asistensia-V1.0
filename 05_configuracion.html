@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Configuración | TallerControl</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/05_configuracion.css">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+
+<body>
+
+    <main class="configuracion">
+
+        <!-- Luces -->
+
+        <div class="luz luz-1"></div>
+        <div class="luz luz-2"></div>
+
+        <!-- Encabezado -->
+
+       <header class="encabezado">
+
+    <div class="titulo">
+
+        <a href="02_inicio.html">
+            <i data-lucide="arrow-left"></i>
+        </a>
+
+        <h1>Configuracion</h1>
+
+    </div>
+
+    <div class="usuario-box">
+
+        <div class="usuario-info">
+
+            <i data-lucide="user"></i>
+
+            <span id="nombreUsuario"></span>
+
+        </div>
+
+        <button
+            id="cerrarSesion"
+            class="btn-salir">
+
+            Salir
+
+        </button>
+
+    </div>
+
+</header>
+
+        <!-- Opciones -->
+
+        <section class="lista-configuracion">
+
+            <article class="opcion">
+
+                <div>
+
+                    <h3>Datos de la institución</h3>
+
+                    <p>Nombre y establecimiento</p>
+
+                </div>
+
+                <i data-lucide="chevron-right"></i>
+
+            </article>
+
+            <article class="opcion">
+
+                <div>
+
+                    <h3>Cambiar contraseña</h3>
+
+                    <p>Modificar acceso</p>
+
+                </div>
+
+                <i data-lucide="chevron-right"></i>
+
+            </article>
+
+            <article class="opcion">
+
+                <div>
+
+                    <h3>Copia de seguridad</h3>
+
+                    <p>Exportar base de datos</p>
+
+                </div>
+
+                <i data-lucide="chevron-right"></i>
+
+            </article>
+
+            <article class="opcion">
+
+                <div>
+
+                    <h3>Restaurar copia</h3>
+
+                    <p>Importar respaldo</p>
+
+                </div>
+
+                <i data-lucide="chevron-right"></i>
+
+            </article>
+
+            <article class="opcion">
+
+                <div>
+
+                    <h3>Acerca de</h3>
+
+                    <p>TallerControl v0.1.0</p>
+
+                </div>
+
+                <i data-lucide="chevron-right"></i>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <script src="js/05_configuracion.js"></script>
+
+    <script>
+
+        lucide.createIcons();
+
+    </script>
+
+<script src="js/auth.js"></script>
+<script src="js/04_usuarios.js"></script>
+
+</body>
+
+</html>

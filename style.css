@@ -1,0 +1,198 @@
+/*
+====================================================
+Proyecto : Asistencia Talleres
+Archivo  : style.css
+Descripción:
+Estilos generales de la aplicación.
+====================================================
+*/
+
+/* ==================================================
+   Proyecto: Asistencia Talleres
+   Versión : 0.1
+================================================== */
+
+:root {
+
+    /* Colores */
+    --background: #E9ECF2;
+    --surface: #FFFFFF;
+
+    --primary: #007AFF;
+
+    --success: #34C759;
+    --danger: #FF2D55;
+
+    --text: #1C1C1E;
+    --text-secondary: #6E6E73;
+
+    --border: #D1D1D6;
+
+    /* Bordes */
+    --radius: 18px;
+
+    /* Sombras */
+    --shadow: 0 15px 40px #2458db14;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    margin:0;
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    color:var(--text);
+
+    overflow-x:hidden;
+
+}
+.container{
+
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:25px;
+
+}
+
+.card{
+
+    width:100%;
+    max-width:420px;
+
+    background:white;
+
+    border-radius:28px;
+
+    box-shadow:var(--shadow);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    padding:40px 30px;
+
+    text-align:center;
+
+}
+
+.card h1{
+
+    font-size:38px;
+
+    margin-bottom:12px;
+
+}
+
+.card p{
+
+    color:var(--text-secondary);
+
+    margin-bottom:35px;
+
+}
+
+button{
+
+    width:100%;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:var(--primary);
+
+    color:white;
+
+    font-size:18px;
+
+    padding:16px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+button:hover{
+
+    transform:translateY(-2px);
+
+    opacity:.92;
+
+}
+.encabezado {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+
+}
+
+.usuario-box {
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    background: rgba(255,255,255,.12);
+
+    padding: 10px;
+    border-radius: 18px;
+
+    backdrop-filter: blur(10px);
+
+}
+
+.usuario-info {
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: white;
+    font-weight: 600;
+
+}
+
+.btn-salir {
+
+    border: none;
+
+    background: rgba(255,255,255,.18);
+
+    color: white;
+
+    padding: 10px 20px;
+
+    border-radius: 14px;
+
+    cursor: pointer;
+
+    transition: .2s;
+
+}
+
+.btn-salir:hover {
+
+    background: rgba(255,255,255,.25);
+
+}

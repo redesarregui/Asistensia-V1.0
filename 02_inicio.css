@@ -1,0 +1,248 @@
+/*
+====================================================
+Proyecto : TallerControl
+Archivo  : 02_inicio.css
+Descripción:
+Pantalla de inicio
+====================================================
+*/
+
+/*=========================================
+  CONTENEDOR
+=========================================*/
+
+.inicio{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:linear-gradient(
+        180deg,
+        #5A4FF3 0%,
+        #4A42D9 100%
+    );
+
+}
+
+/*=========================================
+  LUCES
+=========================================*/
+
+.inicio-luz{
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    border-radius:50%;
+
+    filter:blur(120px);
+
+    opacity:.35;
+
+}
+
+.inicio-luz-1{
+
+    top:-120px;
+
+    left:-120px;
+
+    background:#8D7CFF;
+
+}
+
+.inicio-luz-2{
+
+    bottom:-150px;
+
+    right:-150px;
+
+    background:#35C8FF;
+
+}
+
+/*=========================================
+  CONTENEDOR CENTRAL
+=========================================*/
+
+.inicio-contenedor{
+
+    width:100%;
+
+    max-width:520px;
+
+    padding:40px 25px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/*=========================================
+  BIENVENIDA
+=========================================*/
+
+.inicio-bienvenida{
+
+    margin-bottom:35px;
+
+}
+
+.inicio-bienvenida h1{
+
+    color:white;
+
+    font-size:38px;
+
+    font-weight:700;
+
+}
+
+.inicio-bienvenida p{
+
+    margin-top:8px;
+
+    color:rgba(255,255,255,.75);
+
+}
+
+/*=========================================
+  BOTÓN PRINCIPAL
+=========================================*/
+
+.inicio-principal{
+
+    background:white;
+
+    border-radius:28px;
+
+    padding:35px;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.18);
+
+    transition:.25s;
+
+    margin-bottom:25px;
+
+}
+
+.inicio-principal:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.inicio-principal svg{
+
+    width:48px;
+
+    height:48px;
+
+    color:#5A4FF3;
+
+    margin-bottom:18px;
+
+}
+
+.inicio-principal h2{
+
+    color:#1C1C1E;
+
+    font-size:28px;
+
+}
+
+/*=========================================
+  GRID
+=========================================*/
+
+.inicio-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+/*=========================================
+  TARJETAS
+=========================================*/
+
+.inicio-card{
+
+    background:white;
+
+    border-radius:24px;
+
+    padding:30px 20px;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+    transition:.25s;
+
+}
+
+.inicio-card:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.inicio-card svg{
+
+    width:38px;
+
+    height:38px;
+
+    color:#5A4FF3;
+
+    margin-bottom:15px;
+
+}
+
+.inicio-card h3{
+
+    font-size:18px;
+
+    color:#1C1C1E;
+
+}
+
+/*=========================================
+  FOOTER
+=========================================*/
+
+footer{
+
+    text-align:center;
+
+    margin-top:35px;
+
+    color:rgba(255,255,255,.70);
+
+    font-size:14px;
+
+}

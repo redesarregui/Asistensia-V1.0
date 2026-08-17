@@ -1,0 +1,612 @@
+/*
+====================================================
+Proyecto : TallerControl
+Archivo  : 07_asistencia.css
+Descripción:
+Pantalla de asistencia
+====================================================
+*/
+
+/*=========================================
+  CONTENEDOR
+=========================================*/
+
+.asistencia{
+
+    min-height:100vh;
+
+    padding:35px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:linear-gradient(
+        180deg,
+        #5A4FF3 0%,
+        #4A42D9 100%
+    );
+
+}
+
+/*=========================================
+  LUCES
+=========================================*/
+
+.luz{
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    border-radius:50%;
+
+    filter:blur(120px);
+
+    opacity:.35;
+
+}
+
+.luz-1{
+
+    top:-120px;
+
+    left:-120px;
+
+    background:#8D7CFF;
+
+}
+
+.luz-2{
+
+    bottom:-150px;
+
+    right:-150px;
+
+    background:#35C8FF;
+
+}
+
+/*=========================================
+  ENCABEZADO
+=========================================*/
+
+.encabezado{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.titulo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.titulo a{
+
+    color:white;
+
+    text-decoration:none;
+
+}
+
+.titulo svg{
+
+    width:28px;
+
+    height:28px;
+
+}
+
+.titulo h1{
+
+    color:white;
+
+    font-size:36px;
+
+}
+
+/*=========================================
+  FECHA
+=========================================*/
+
+.fecha-asistencia{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-bottom:25px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.fecha-asistencia label{
+
+    color:white;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+}
+
+.fecha-asistencia input{
+
+    width:100%;
+
+    max-width:350px;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:white;
+
+    font-size:15px;
+
+    outline:none;
+
+}
+
+/*=========================================
+  FILTROS
+=========================================*/
+
+.filtros{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:15px;
+
+    margin-bottom:25px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.campo{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.campo label{
+
+    color:white;
+
+    margin-bottom:8px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.campo select{
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:white;
+
+    font-size:15px;
+
+    outline:none;
+
+}
+
+/*=========================================
+  BUSCADOR
+=========================================*/
+
+.busqueda{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:18px 22px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.busqueda svg{
+
+    color:#666;
+
+}
+
+.busqueda input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    font-size:16px;
+
+}
+
+/*=========================================
+  LISTA
+=========================================*/
+
+.lista-asistencia{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+    margin-bottom:25px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/*=========================================
+  ALUMNO
+=========================================*/
+
+.alumno{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:white;
+
+    border-radius:22px;
+
+    padding:22px 24px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+
+}
+
+.alumno:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.alumno h3{
+
+    color:#1C1C1E;
+
+    font-size:20px;
+
+    margin:0;
+
+}
+
+/*=========================================
+  ESTADOS
+=========================================*/
+
+.estado{
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    transition:.25s;
+
+}
+
+.presente {
+
+    width: 24px;
+    height: 24px;
+
+    cursor: pointer;
+
+}
+
+.ausente{
+
+    background:#FFE8EC;
+
+    color:#E53935;
+
+}
+
+/*=========================================
+  RESUMEN
+=========================================*/
+
+.resumen{
+
+    display:flex;
+
+    justify-content:space-around;
+
+    align-items:center;
+
+    background:white;
+
+    border-radius:22px;
+
+    padding:22px;
+
+    margin-bottom:20px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.resumen div{
+
+    text-align:center;
+
+}
+
+.resumen span{
+
+    display:block;
+
+    color:#777;
+
+    margin-bottom:6px;
+
+}
+
+.resumen strong{
+
+    font-size:30px;
+
+    color:#1C1C1E;
+
+}
+
+/*=========================================
+  BOTÓN
+=========================================*/
+
+.btn-guardar{
+
+    width:100%;
+
+    padding:20px;
+
+    border:none;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        90deg,
+        #5A4FF3,
+        #4FA6FF
+    );
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:12px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.btn-guardar:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/*=========================================
+  RESPONSIVE
+=========================================*/
+
+@media(max-width:900px){
+
+    .filtros{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .fecha-asistencia input{
+
+        max-width:100%;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .asistencia{
+
+        padding:20px;
+
+    }
+
+    .titulo h1{
+
+        font-size:28px;
+
+    }
+
+    .alumno{
+
+        padding:18px;
+
+    }
+
+    .alumno h3{
+
+        font-size:17px;
+
+    }
+
+    .estado{
+
+        font-size:12px;
+
+        padding:8px 14px;
+
+    }
+
+    .resumen{
+
+        flex-direction:column;
+
+        gap:20px;
+
+    }
+
+}
+.alumno-item {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 16px 20px;
+
+    border-radius: 16px;
+
+    background: #CFF4D8;
+    border: 3px solid #52C66D;
+
+    
+    transition:
+        background-color .35s ease,
+        border-color .35s ease,
+        transform .20s ease;
+
+}
+.alumno-item:hover {
+
+    transform: translateY(-2px);
+
+}
+.alumno-item.ausente {
+
+    background: #FFC9D1;
+    border: 3px solid #F45B69;
+
+}
+.alumno-item span {
+
+    font-size: 15px;
+    font-weight: 600;
+
+    color: #222;
+
+}
+.nombre-alumno {
+
+    font-size: 17px;
+    letter-spacing: .2px;
+
+}
+
+.animando {
+
+    animation: cambioEstado .3s ease;
+
+}
+
+@keyframes cambioEstado {
+
+    0% {
+
+        transform: scale(1);
+
+    }
+
+    50% {
+
+        transform: scale(1.02);
+
+    }
+
+    100% {
+
+        transform: scale(1);
+
+    }
+
+}

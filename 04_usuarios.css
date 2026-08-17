@@ -1,0 +1,471 @@
+/*
+====================================================
+Proyecto : TallerControl
+Archivo  : 04_usuarios.css
+Descripción:
+Pantalla de usuarios
+====================================================
+*/
+
+/*=========================================
+  CONTENEDOR
+=========================================*/
+
+.usuarios{
+
+    min-height:100vh;
+
+    padding:35px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:linear-gradient(
+        180deg,
+        #5A4FF3 0%,
+        #4A42D9 100%
+    );
+
+}
+
+/*=========================================
+  LUCES
+=========================================*/
+
+.luz{
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    border-radius:50%;
+
+    filter:blur(120px);
+
+    opacity:.35;
+
+}
+
+.luz-1{
+
+    top:-120px;
+
+    left:-120px;
+
+    background:#8D7CFF;
+
+}
+
+.luz-2{
+
+    bottom:-150px;
+
+    right:-150px;
+
+    background:#35C8FF;
+
+}
+
+/*=========================================
+  ENCABEZADO
+=========================================*/
+
+.encabezado{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.titulo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.titulo a{
+
+    text-decoration:none;
+
+    color:white;
+
+}
+
+.titulo svg{
+
+    width:28px;
+
+    height:28px;
+
+}
+
+.titulo h1{
+
+    color:white;
+
+    font-size:36px;
+
+}
+
+.usuario{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:white;
+
+    background:rgba(255,255,255,.12);
+
+    padding:12px 20px;
+
+    border-radius:18px;
+
+}
+
+/*=========================================
+  BUSCADOR
+=========================================*/
+
+.busqueda{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    background:white;
+
+    padding:18px 22px;
+
+    border-radius:22px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.busqueda input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    font-size:16px;
+
+}
+
+/*=========================================
+  ACCIONES
+=========================================*/
+
+.acciones{
+
+    margin-bottom:30px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.btn-primary{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        90deg,
+        #5A4FF3,
+        #4FA6FF
+    );
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/*=========================================
+  LISTA
+=========================================*/
+
+.lista-usuarios{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/*=========================================
+  TARJETA
+=========================================*/
+
+.card-usuario{
+
+    display:grid;
+
+    grid-template-columns:70px 1fr auto;
+
+    align-items:center;
+
+    gap:20px;
+
+    background:white;
+
+    border-radius:24px;
+
+    padding:28px 24px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+/*=========================================
+  AVATAR
+=========================================*/
+
+.avatar{
+
+    width:65px;
+
+    height:65px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:#F2F3FF;
+
+    color:#5A4FF3;
+
+}
+
+/*=========================================
+  DATOS
+=========================================*/
+
+.datos h3{
+
+    font-size:20px;
+
+    color:#1C1C1E;
+
+    margin-bottom:6px;
+
+}
+
+.datos p{
+
+    color:#8A8A8A;
+
+    font-size:15px;
+
+}
+
+/*=========================================
+  DERECHA
+=========================================*/
+
+.acciones-usuario{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.rol{
+
+    padding:8px 15px;
+
+    border-radius:14px;
+
+    font-size:14px;
+
+    font-weight:700;
+
+}
+
+.administrador{
+
+    background:#ECEAFF;
+
+    color:#5A4FF3;
+
+}
+
+.docente{
+
+    background:#E8F8EC;
+
+    color:#1E9E53;
+
+}
+
+.editar{
+
+    border:none;
+
+    background:none;
+
+    color:#5A4FF3;
+
+    cursor:pointer;
+
+}
+
+/*=========================================
+  FOOTER
+=========================================*/
+
+footer{
+
+    margin-top:30px;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+footer strong{
+
+    display:block;
+
+    margin-top:5px;
+
+    font-size:22px;
+
+}
+
+.modal {
+
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0,0,0,.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 999;
+
+}
+
+.oculto {
+
+    display: none;
+
+}
+
+.modal-contenido {
+
+    width: 400px;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    background: white;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+}
+
+.modal-contenido h2 {
+
+    text-align: center;
+
+}
+
+.modal-contenido input,
+.modal-contenido select {
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    border: 1px solid #ddd;
+
+}
+
+.modal-botones {
+
+    display: flex;
+    gap: 10px;
+
+}
+
+.modal-botones button {
+
+    flex: 1;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+}

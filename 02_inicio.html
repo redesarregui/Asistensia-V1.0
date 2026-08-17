@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Inicio | TallerControl</title>
+
+    <!-- Estilos -->
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/02_inicio.css">
+
+    <!-- Iconos -->
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+
+<body>
+
+    <main class="inicio">
+
+        <!-- Luces -->
+
+        <div class="inicio-luz inicio-luz-1"></div>
+        <div class="inicio-luz inicio-luz-2"></div>
+
+        <div class="inicio-contenedor">
+
+            <!-- Bienvenida -->
+
+            <section class="inicio-bienvenida">
+
+                <h1>
+
+                    Hola,
+                    <span id="nombreUsuario">Ezequiel</span>
+
+                </h1>
+
+                <p id="fecha"></p>
+
+               <button id="cerrarSesion" class="btn-cerrar">
+                    Cerrar sesión 
+                </button>
+
+            </section>
+
+            <!-- Botón principal -->
+
+            <section class="inicio-principal"
+                     onclick="window.location.href='07_asistencia.html'">
+
+                <i data-lucide="clipboard-list"></i>
+
+                <h2>Tomar asistencia</h2>
+
+            </section>
+
+            <!-- Menú -->
+
+            <section class="inicio-grid">
+
+                <!-- Estudiantes -->
+
+                <article class="inicio-card"
+                         onclick="window.location.href='03_estudiantes.html'">
+
+                    <i data-lucide="graduation-cap"></i>
+
+                    <h3>Estudiantes</h3>
+
+                </article>
+
+                <!-- Reportes -->
+
+                <article class="inicio-card"
+                         onclick="window.location.href='06_reportes.html'">
+
+                    <i data-lucide="chart-column"></i>
+
+                    <h3>Reportes</h3>
+
+                </article>
+
+                <!-- Configuración -->
+
+                <article class="inicio-card"
+                         onclick="window.location.href='05_configuracion.html'">
+
+                    <i data-lucide="settings"></i>
+
+                    <h3>Configuración</h3>
+
+                </article>
+
+                <!-- Usuarios -->
+
+                <article class="inicio-card"
+                         onclick="window.location.href='04_usuarios.html'">
+
+                    <i data-lucide="users"></i>
+
+                    <h3>Usuarios</h3>
+
+                </article>
+
+            </section>
+
+            <!-- Pie -->
+
+            <footer>
+
+                TallerControl v0.1.0
+
+            </footer>
+
+        </div>
+
+    </main>
+    
+   
+
+    <script>
+
+        lucide.createIcons();
+
+    </script>
+    
+ <script src="js/auth.js"></script>
+<script src="js/02_inicio.js"></script>
+
+</body>
+
+</html>

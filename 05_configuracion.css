@@ -1,0 +1,220 @@
+/*
+====================================================
+Proyecto : TallerControl
+Archivo  : 05_configuracion.css
+Descripción:
+Pantalla de configuración
+====================================================
+*/
+
+/*=========================================
+  CONTENEDOR
+=========================================*/
+
+.configuracion{
+
+    min-height:100vh;
+
+    padding:35px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:linear-gradient(
+        180deg,
+        #5A4FF3 0%,
+        #4A42D9 100%
+    );
+
+}
+
+/*=========================================
+  LUCES
+=========================================*/
+
+.luz{
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    border-radius:50%;
+
+    filter:blur(120px);
+
+    opacity:.35;
+
+}
+
+.luz-1{
+
+    top:-120px;
+
+    left:-120px;
+
+    background:#8D7CFF;
+
+}
+
+.luz-2{
+
+    bottom:-150px;
+
+    right:-150px;
+
+    background:#35C8FF;
+
+}
+
+/*=========================================
+  ENCABEZADO
+=========================================*/
+
+.encabezado{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.titulo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.titulo a{
+
+    color:white;
+
+    text-decoration:none;
+
+}
+
+.titulo svg{
+
+    width:28px;
+
+    height:28px;
+
+}
+
+.titulo h1{
+
+    color:white;
+
+    font-size:36px;
+
+}
+
+.usuario{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:white;
+
+    background:rgba(255,255,255,.12);
+
+    padding:12px 20px;
+
+    border-radius:18px;
+
+}
+
+/*=========================================
+  LISTA
+=========================================*/
+
+.lista-configuracion{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/*=========================================
+  OPCION
+=========================================*/
+
+.opcion{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:white;
+
+    border-radius:24px;
+
+    padding:26px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.opcion:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.opcion h3{
+
+    color:#1C1C1E;
+
+    font-size:20px;
+
+    margin-bottom:6px;
+
+}
+
+.opcion p{
+
+    color:#8A8A8A;
+
+    font-size:15px;
+
+}
+
+.opcion svg{
+
+    width:26px;
+
+    height:26px;
+
+    color:#5A4FF3;
+
+}

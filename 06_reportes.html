@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Reportes | TallerControl</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/06_reportes.css">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+
+<body>
+
+<main class="reportes">
+
+    <!-- Luces -->
+
+    <div class="luz luz-1"></div>
+    <div class="luz luz-2"></div>
+
+    <!-- Encabezado -->
+
+   <header class="encabezado">
+
+    <div class="titulo">
+
+        <a href="02_inicio.html">
+            <i data-lucide="arrow-left"></i>
+        </a>
+
+        <h1>Reportes</h1>
+
+    </div>
+
+    <div class="usuario-box">
+
+        <div class="usuario-info">
+
+            <i data-lucide="user"></i>
+
+            <span id="nombreUsuario"></span>
+
+        </div>
+
+        <button
+            id="cerrarSesion"
+            class="btn-salir">
+
+            Salir
+
+        </button>
+
+    </div>
+
+</header>
+
+    <!-- Filtros -->
+
+    <section class="filtros">
+
+        <div class="campo">
+
+            <label>Desde</label>
+
+            <input
+                type="date"
+                id="fechaDesde">
+
+        </div>
+
+        <div class="campo">
+
+            <label>Hasta</label>
+
+            <input
+                type="date"
+                id="fechaHasta">
+
+        </div>
+
+    </section>
+
+    <!-- Botón -->
+
+    
+<section class="acciones">
+
+    <button
+        class="btn-primary"
+        id="btnGenerar">
+
+        <i data-lucide="search"></i>
+
+        Generar reporte
+
+    </button>
+
+    <button
+        class="btn-secondary"
+        id="btnExportar">
+
+        <i data-lucide="file-spreadsheet"></i>
+
+        Exportar Excel
+
+    </button>
+
+</section>
+
+    <!-- Resumen -->
+
+    <section
+        id="resumenReporte">
+
+    </section>
+
+    <!-- Resultado -->
+
+    <section
+        class="resultado"
+        id="resultado">
+
+        <div class="sin-datos">
+
+            <i data-lucide="table-properties"></i>
+
+            <h3>No hay resultados</h3>
+
+            <p>
+                Seleccioná una fecha o un período
+                para consultar los ausentes.
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="js/06_reportes.js"></script>
+
+<script>
+
+    lucide.createIcons();
+
+</script>
+
+<script src="js/auth.js"></script>
+<script src="js/06_reportes.js"></script>
+
+</body>
+
+</html>
